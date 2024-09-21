@@ -1,6 +1,6 @@
 import React from 'react';
-import { Button } from "@/components/ui/button";
-import { CalendarPlus } from "lucide-react";
+import { Button } from "@chakra-ui/react";
+import { CalendarIcon } from "@chakra-ui/icons";
 
 const BookingButton = () => {
   const handleBooking = () => {
@@ -9,9 +9,8 @@ const BookingButton = () => {
   };
 
   return (
-    <Button onClick={handleBooking} className="flex items-center space-x-2">
-      <CalendarPlus className="h-5 w-5" />
-      <span>Book Now</span>
+    <Button onClick={handleBooking} leftIcon={<CalendarIcon />} colorScheme="blue">
+      Book Now
     </Button>
   );
 };

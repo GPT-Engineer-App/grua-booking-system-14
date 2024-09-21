@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button } from "@chakra-ui/react";
-import { CalendarIcon } from "@chakra-ui/icons";
+import { FaCalendarPlus } from "react-icons/fa";
 
 const BookingButton = () => {
   const handleBooking = () => {
@@ -9,7 +9,7 @@ const BookingButton = () => {
   };
 
   return (
-    <Button onClick={handleBooking} leftIcon={<CalendarIcon />} colorScheme="blue">
+    <Button onClick={handleBooking} leftIcon={<FaCalendarPlus />} colorScheme="blue">
       Book Now
     </Button>
   );
